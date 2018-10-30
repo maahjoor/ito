@@ -1,0 +1,9 @@
+<h1>counting page</h1>
+<a href="{% url 'home' %}">back to home</a>
+{{fulltext}}
+<br>
+
+{% for word,value in  worddictionary %}
+{{ word }} = {{ value }}
+<br>
+{% endfor %}
