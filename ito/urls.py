@@ -3,7 +3,7 @@ from django.urls import path
 from .wordcount import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage, name = 'home'),
+    path('', views.home, name = 'home'),
     path('count/', views.count, name='count'),
 
 ]
